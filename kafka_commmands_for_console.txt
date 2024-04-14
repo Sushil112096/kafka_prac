@@ -1,0 +1,21 @@
+Commands
+1.to start the zookeaper service
+D:\Development\kafka_2.13-3.3.1>bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+
+
+2.to start the kafka server
+D:\Development\kafka_2.13-3.3.1>bin\windows\kafka-server-start.bat config\server.properties
+
+3.create topic user-topic
+bin\windows\kafka-topics.bat --create --topic user-topic --bootstrap-server localhost:9092
+
+--list all the topics on this 
+D:\Development\kafka_2.13-3.3.1>bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --list  
+
+4.delete kafka topi
+bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --delete --topic User-topic
+
+5.producers for the new topic
+bin\windows\kafka-console-producer.bat --topic user-topic --bootstrap-server localhost:9092
+
+this will start streamin and consuming the topic all this can be used on console in kafka directlory
