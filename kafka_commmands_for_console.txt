@@ -18,4 +18,7 @@ bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --delete --topic 
 5.producers for the new topic
 bin\windows\kafka-console-producer.bat --topic user-topic --bootstrap-server localhost:9092
 
+6.consumer fopr the topic
+bin\windows\kafka-console-consumer.bat --topic user-topic --from-beginning --bootstrap-server localhost:9092
+
 this will start streamin and consuming the topic all this can be used on console in kafka directlory
